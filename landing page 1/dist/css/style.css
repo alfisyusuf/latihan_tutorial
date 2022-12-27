@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin-inline: auto;
+	transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 990px) {
+	.container {
+		width: 80%;
+		margin-inline: auto;
+		transition: all 0.3s linear;
+	}
+}
+
+.navbar .box-navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .box-navbar .navigation ul {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.navbar .box-navbar .navigation ul li {
+	list-style-type: none;
+}
+
+.navbar .box-navbar .navigation ul li a {
+	text-decoration: none;
+	color: black;
+}
