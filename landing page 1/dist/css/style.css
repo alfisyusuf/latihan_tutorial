@@ -39,6 +39,24 @@
 
 .navbar .box-navbar .navigation ul li {
 	list-style-type: none;
+	transition: all 0.2s ease;
+}
+
+.navbar .box-navbar .navigation ul li:hover {
+	transform: scale(1.1);
+}
+
+.navbar .box-navbar .navigation ul li:hover a {
+	color: #8338ec;
+}
+
+.navbar .box-navbar .navigation ul li:nth-child(5) a {
+	padding: 10px 30px 10px 30px;
+	border: none;
+	background-color: #8338ec;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
 }
 
 .navbar .box-navbar .navigation ul li a {
