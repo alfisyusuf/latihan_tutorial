@@ -26,6 +26,11 @@
 	align-items: center;
 }
 
+.navbar .box-navbar .brand h1 {
+	font-size: 40px;
+	color: #303030;
+}
+
 .navbar .box-navbar .navigation ul {
 	display: flex;
 	align-items: center;
