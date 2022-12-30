@@ -20,6 +20,19 @@
 	}
 }
 
+.navbar {
+	padding: 5px 0 5px 0;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	transition: all 0.4s ease;
+}
+
+.scrolling-active {
+	background-color: #011627;
+	padding: 9px 0 9px 0;
+}
+
 .navbar .box-navbar {
 	display: flex;
 	justify-content: space-between;
@@ -29,6 +42,11 @@
 .navbar .box-navbar .brand h1 {
 	font-size: 40px;
 	color: #303030;
+}
+
+.navbar.scrolling-active .box-navbar .brand h1 {
+	font-size: 40px;
+	color: #ffffff;
 }
 
 .navbar .box-navbar .navigation ul {
@@ -50,6 +68,14 @@
 	color: #8338ec;
 }
 
+.navbar.scrolling-active .box-navbar .navigation ul li:hover a {
+	color: #8338ec;
+}
+
+.navbar.scrolling-active .box-navbar .navigation ul li:nth-child(5):hover a {
+	color: white;
+}
+
 .navbar .box-navbar .navigation ul li:nth-child(5) a {
 	padding: 10px 30px 10px 30px;
 	border: none;
@@ -62,4 +88,14 @@
 .navbar .box-navbar .navigation ul li a {
 	text-decoration: none;
 	color: black;
+}
+
+.navbar.scrolling-active .box-navbar .navigation ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.hero {
+	width: 100%;
+	min-height: 200vh;
 }
